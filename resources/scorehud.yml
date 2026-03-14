@@ -2,7 +2,7 @@
 # ONLY FOR INTERNAL USE.
 scorehud-version: 3
 
-# Заголовок сервера (статичный ярко-красный)
+# Заголовок сервера (Ярко-красный)
 titles:
   flicker: false
   period: 5
@@ -10,28 +10,23 @@ titles:
   lines:
   - "§l§cDuqs"
 
-# Основной экран (для всех миров)
+# Твой основной скорборд (Чистый и быстрый)
 default-board:
 - "§c§m--------------------"
 - "§c» §fНик: §c{scorehud.name}"
-- ""
-- "§c» §fУбийств: §c{killrate.kille}"
-- "§c» §fСмертей: §c{killrate.deaths}"
-- "§c» §fKDR (У/С): §e{killrate.kdr}"
+- "§c» §fПинг: §c{scorehud.ping}ms"
 - ""
 - "§c» §fОнлайн: §c{scorehud.online} §7/ §c{scorehud.max_online}"
-- "§c» §fПинг: §c{scorehud.ping}ms"
 - ""
 - "§c» §fTG: §c@DuqsPe"
 - "§c§m--------------------"
 
-# Настройки для миров
+# Для миров (оставляем так же)
 scoreboards:
   "world":
     lines:
     - "§c§m--------------------"
     - "§c» §fНик: §c{scorehud.name}"
-    - "§c» §fKDR (У/С): §e{killrate.kdr}"
     - "§c» §fОнлайн: §c{scorehud.online}"
     - "§c§m--------------------"
     
