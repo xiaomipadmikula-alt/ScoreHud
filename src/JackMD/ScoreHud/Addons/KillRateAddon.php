@@ -24,8 +24,13 @@ class KillRateAddon extends AddonBase{
 			},
 			"killrate.deaths" => function(Player $player){
 				return $this->killRate->getKillManager()->getPlayerDeaths($player);
+			},
+			"killrate.kdr"    => function(Player $player){
+				$kills = $this->killRate->getKillManager()->getPlayerKills($player);
+				$deaths = $this->killRate->getKillManager()->getPlayerDeaths($player);
+				// Считаем КД: если смертей 0, выводим просто кол-во убийств
+				return ($deaths > 0) ? round($kills / $deaths, 2) : $kills;
 			}
 		];
 	}
 }
-
