@@ -14,7 +14,10 @@ titles:
 default-board:
 - "§c§m--------------------"
 - "§c» §fНик: §c{scorehud.name}"
-- "§c» §fРанг: §c{ranksystem_prefix}"
+- ""
+- "§c» §fУбийств: §c{killrate.kille}"
+- "§c» §fСмертей: §c{killrate.deaths}"
+- "§c» §fKDR (У/С): §e{killrate.kdr}"
 - ""
 - "§c» §fОнлайн: §c{scorehud.online} §7/ §c{scorehud.max_online}"
 - "§c» §fПинг: §c{scorehud.ping}ms"
@@ -22,14 +25,13 @@ default-board:
 - "§c» §fTG: §c@DuqsPe"
 - "§c§m--------------------"
 
-# Настройки для миров (если включен multi-world)
+# Настройки для миров
 scoreboards:
   "world":
     lines:
     - "§c§m--------------------"
     - "§c» §fНик: §c{scorehud.name}"
-    - "§c» §fРанг: §c{ranksystem_prefix}"
+    - "§c» §fKDR (У/С): §e{killrate.kdr}"
     - "§c» §fОнлайн: §c{scorehud.online}"
     - "§c§m--------------------"
     
- 
